@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{EA4DBD07-5C70-F98B-C275-1BBA25D11F70}") = "Futbolito", "Assembly-CSharp.csproj", "{6E639626-C695-24D7-8F80-59B8EFF624C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E639626-C695-24D7-8F80-59B8EFF624C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E639626-C695-24D7-8F80-59B8EFF624C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E639626-C695-24D7-8F80-59B8EFF624C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E639626-C695-24D7-8F80-59B8EFF624C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
