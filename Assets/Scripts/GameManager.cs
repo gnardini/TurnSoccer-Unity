@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour {
     public Text result;
     public GameObject player;
 
+    private static int MAX_GOALS = 1;
+
     private int _playersTurn;
     private int[] _playerGoals;
 
@@ -44,11 +46,6 @@ public class GameManager : MonoBehaviour {
         _players.Add(playerPlaceHolder);
     }
 
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
     public void changeTurn() {
         _playersTurn = 3 - _playersTurn;
         bool player1Turn = isPlayersTurn(1);
@@ -69,6 +66,11 @@ public class GameManager : MonoBehaviour {
         _ball.GetComponent<Rigidbody2D>().angularVelocity = 0;
 
         _playerGoals[playerGoal - 1]++;
+        if (_playerGoals[playerGoal - 1] == MAX_GOALS) {
+            EndGameManager.winnerPlayer = playerGoal;
+            Application.LoadLevel("EndGame");
+            return;
+        }
         result.text = _playerGoals[0] + " - " + _playerGoals[1];
     }
 
